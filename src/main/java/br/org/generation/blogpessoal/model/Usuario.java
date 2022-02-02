@@ -14,6 +14,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -45,7 +47,7 @@ public class Usuario {
 	//Primeiro Método Construtor - Com todos os atributos.
 	
 		
-	public Usuario(long id_usuario, String nome, String usuario, String senha,String foto) {
+	public Usuario(Long id_usuario, String nome, String usuario, String senha,String foto) {
 		this.id_usuario = id_usuario;
 		this.nome = nome;
 		this.usuario = usuario;
@@ -59,11 +61,11 @@ public class Usuario {
 	public Usuario() {}
 
 
-	public long getId_usuario() {
+	public Long getId_usuario() {
 		return id_usuario;
 	}
 
-	public void setId_usuario(long id_usuario) {
+	public void setId_usuario(Long id_usuario) {
 		this.id_usuario = id_usuario;
 	}
 
