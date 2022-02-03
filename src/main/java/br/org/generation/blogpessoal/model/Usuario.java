@@ -47,12 +47,11 @@ public class Usuario {
 	//Primeiro Método Construtor - Com todos os atributos.
 	
 		
-	public Usuario(Long id_usuario, String nome, String usuario, String senha,String foto) {
+	public Usuario(Long id_usuario, String nome, String usuario, String senha) {
 		this.id_usuario = id_usuario;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
-		this.foto = foto;
 	}
 
 	
